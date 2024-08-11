@@ -1,0 +1,14 @@
+<div *ngFor="let domain of domains" class="card">
+  <div class="card-header">
+    <h3>{{ domain.meta.request.domain }}</h3>
+    <p>Granularity: {{ domain.meta.request.granularity }}</p>
+  </div>
+  <div class="card-body">
+    <p>Date Range: {{ domain.meta.request.start_date }} to {{ domain.meta.request.end_date }}</p>
+    <ul>
+      <li *ngFor="let visit of domain.visits">
+        Date: {{ visit.date }} - Visits: {{ visit.visits | number }}
+      </li>
+    </ul>
+  </div>
+</div>
