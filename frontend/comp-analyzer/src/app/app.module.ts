@@ -2,7 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { DomainCardComponent } from './domain-card/domain-card.component';
 import { AppComponent } from './app.component';
-import { TopSitesComponent } from '../top-sites/top-sites.component';
+import { TopSitesComponent } from './top-sites/top-sites.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
