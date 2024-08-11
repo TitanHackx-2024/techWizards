@@ -1,21 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { CategoryListComponent } from './components/CategoryListComponent';
 import { HttpClientModule } from '@angular/common/http';
-import { CardViewComponent } from './components/card-view.component';
+import { NgModule } from '@angular/core';
+import { DomainCardComponent } from './domain-card/domain-card.component';
+import { AppComponent } from './app.component';
+import { TopSitesComponent } from './top-sites/top-sites.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CategoryListComponent,
-    CardViewComponent
+    DomainCardComponent,
+    TopSitesComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
